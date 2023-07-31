@@ -7,7 +7,6 @@
 
 / {
     behaviors {
-        #include "macros.dtsi"
 
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
