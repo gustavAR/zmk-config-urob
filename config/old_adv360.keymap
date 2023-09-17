@@ -126,7 +126,7 @@
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp RA(W)  &kp RA(O)  &kp RA(A)              &kp J             &kp Q      &kp Z
  &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_CONTROL N  &gqt LEFT_SHIFT T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_SHIFT A  &gqt LEFT_CONTROL E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 3 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &kp SPACE  &kp ENTER     &kp C(BACKSPACE)  &kp A(TAB)  &kp LEFT_GUI           &kp DELETE
+    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 3 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &kp SPACE  &kp ENTER     &kp LC(BACKSPACE)  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
