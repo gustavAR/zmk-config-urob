@@ -118,13 +118,13 @@
         };
         nav_mac: behavior_macro_3 {
             compatible = "zmk,behavior-macro";
-            label = "MACRO2";
+            label = "MACRO3";
             #binding-cells = <0>;
             bindings = < &sl 3 >;
         };
         num_mac: behavior_macro_4 {
             compatible = "zmk,behavior-macro";
-            label = "MACRO2";
+            label = "MACRO4";
             #binding-cells = <0>;
             bindings = < &sl 4 >;
         };
