@@ -124,29 +124,29 @@
             bindings = <
         &tog 1           &kp N1           &kp N2             &kp N3               &kp N4    &kp N5         &to 4       &mo 5     &kp N6        &kp N7            &kp N8             &kp N9            &kp N0  &kp MINUS
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp RA(W)  &kp RA(O)  &kp RA(A)              &kp J             &kp Q      &kp Z
- &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T     &kp G         &to 3  &gql 4 TAB   &kp RALT                                           &kp RALT  &gql 2 BACKSPACE      &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
+ &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_CONTROL N  &gqt LEFT_SHIFT T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_SHIFT A  &gqt LEFT_CONTROL E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 3 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &kp SPACE  &kp ENTER     &kp BACKSPACE  &kp ENTER  &kp LEFT_GUI           &kp DELETE
+    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 3 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &kp SPACE  &kp ENTER     &kp C(BACKSPACE)  &kp A(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
         Symbols1 {
             bindings = <
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
-&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp SINGLE_QUOTE  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
+&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &skq LEFT_GUI      &skq LEFT_ALT  &skq LEFT_CONTROL  &skq LEFT_SHIFT     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
-&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
-&trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &mo 2     &trans /*Should be num word or something*/ &trans       &trans  &trans  &trans             &trans
+&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &mo 2     &mo 3 /*Rework nav for left side*/ &trans       &trans  &trans  &trans             &trans
             >;
         };
 
         Symbols2 {
             bindings = <
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
-&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp SINGLE_QUOTE  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
+&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
-&trans           &trans         &trans            &trans     &trans            &trans  &trans  &mo 3  &mo 1          &trans            &trans             &trans       &trans  &trans  &trans             &trans
+&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans           &trans         &trans            &trans     &trans            &mo 4  &mo 1  &trans  &trans          &trans            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
 
@@ -164,7 +164,7 @@
             bindings = <
            &kp EQUAL            &kp N1        &kp N2        &kp N3          &kp N4         &kp N5     &trans             &mo 5        &kp N6   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp MINUS
              &kp TAB            &kp F7        &kp F8        &kp F9         &kp F10         &trans      &to 0             &to 6        &trans       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
-&mt LEFT_CONTROL ESC            &kp F4        &kp F5        &kp F6         &kp F11         &trans      &to 3  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 2    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
+&mt LEFT_CONTROL ESC            &lt LEFT_GUI F4        &lt LEFT_ALT F5        &lt LEFT_CONTROL F6         &lt LEFT_SHIFT F11         &trans      &to 3  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 2    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
       &kp LEFT_SHIFT            &kp F1        &kp F2        &kp F3         &kp F12         &trans      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none    &trans  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
                &to 0  &sk LEFT_CONTROL  &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &kp BACKSPACE  &lt 3 ESC            &trans        &trans  &lt 2 ENTER        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 3
             >;
