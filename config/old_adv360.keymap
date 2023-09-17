@@ -174,7 +174,7 @@
             bindings = <
            &kp EQUAL            &kp N1        &kp N2        &kp N3          &kp N4         &kp N5     &trans             &mo 5        &kp N6   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp MINUS
              &kp TAB            &kp F7        &kp F8        &kp F9         &kp F10         &trans      &to 0             &to 6        &trans       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
-&mt LEFT_CONTROL ESC            &lt LEFT_GUI F4        &lt LEFT_ALT F5        &lt LEFT_CONTROL F6         &lt LEFT_SHIFT F11         &trans      &to 3  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 2    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
+&mt LEFT_CONTROL ESC            &mt LEFT_GUI F4        &mt LEFT_ALT F5        &mt LEFT_CONTROL F6         &mt LEFT_SHIFT F11         &trans      &to 3  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 2    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
       &kp LEFT_SHIFT            &kp F1        &kp F2        &kp F3         &kp F12         &trans      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none    &trans  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
                &to 0  &sk LEFT_CONTROL  &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &kp BACKSPACE  &lt 3 ESC            &trans        &trans  &lt 2 ENTER        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 3
             >;
