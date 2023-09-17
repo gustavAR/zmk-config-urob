@@ -126,7 +126,7 @@
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp RA(W)  &kp RA(O)  &kp RA(A)              &kp J             &kp Q      &kp Z
  &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_CONTROL N  &gqt LEFT_SHIFT T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_SHIFT A  &gqt LEFT_CONTROL E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 3 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &kp SPACE  &kp ENTER     &kp LC(BACKSPACE)  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
+    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 4 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &gql 3 SPACE  &kp ENTER     &kp LC(BACKSPACE)  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
@@ -153,10 +153,10 @@
         Nav {
             bindings = <
      &kp F1        &kp C_BRI_DN    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE   &to 4   &mo 5  &kp F7   &kp F8     &kp F9          &kp F10        &kp F11       &kp F12
-&kp C_POWER           &kp LC(Q)           &kp LC(W)          &kp LC(E)        &kp LC(R)   &kp LC(T)   &to 0   &to 6  &trans  &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
-&kp C_SLEEP  &mt LEFT_GUI LC(A)      &mt LALT LC(S)   &mt LSHIFT LC(D)  &mt LCTRL LC(F)   &kp LC(G)   &to 3  &trans  &trans                               &trans         &trans         &to 2          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
-     &trans           &kp LC(Z)           &kp LC(X)          &kp LC(C)        &kp LC(V)   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
-      &to 0        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &trans  &trans  &trans   &trans     &trans  &sk RIGHT_SHIFT   &sk LEFT_ALT  &kp LEFT_GUI  &sk LEFT_CONTROL     &to 0
+&trans           &kp LC(Q)           &kp LC(W)          &kp UP        &kp GRAVE   &kp LC(T)   &to 0   &to 6  &trans  &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT      &to 3  &trans  &trans                               &trans         &trans         &to 2          &kp LEFT_SHIFT  &kp LEFT_CONTROL         &kp LEFT_ALT    &kp LEFT_GUI   &trans  &trans
+     &trans           &kp PAGE_UP           &kp PAGE_DOWN          &kp HOME        &kp END   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
+      &to 0        &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans   &trans     &trans  &kp PRINTSCREEN  &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV       &to 0
             >;
         };
 
