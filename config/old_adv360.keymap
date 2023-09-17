@@ -54,6 +54,16 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        comma_at: comma_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "comma_at";
+            #binding-cells = <0>;
+            bindings =
+                <&kp COMMA>,
+                <&kp AT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         comma_excl: comma_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "comma_excl";
@@ -124,7 +134,7 @@
             bindings = <
         &tog 1           &kp N1           &kp N2             &kp N3               &kp N4    &kp N5         &to 4       &mo 5     &kp N6        &kp N7            &kp N8             &kp N9            &kp N0  &kp MINUS
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp RA(W)  &kp RA(O)  &kp RA(A)              &kp J             &kp Q      &kp Z
- &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_CONTROL N  &gqt LEFT_SHIFT T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_SHIFT A  &gqt LEFT_CONTROL E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
+ &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_CONTROL N  &gqt LEFT_SHIFT T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_SHIFT A  &gqt LEFT_CONTROL E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_at
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
     &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp ESCAPE  &gqr 4 0  &sym1mac       &mo 5   &kp RALT  &sym2mac         &gql 3 SPACE  &kp ENTER     &kp LC(BACKSPACE)  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
@@ -135,7 +145,7 @@
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
 &trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &skq LEFT_GUI      &skq LEFT_ALT  &skq LEFT_CONTROL  &skq LEFT_SHIFT     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
-&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp SEMI  &trans
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &mo 2     &mo 3 /*Rework nav for left side*/ &trans       &trans  &trans  &trans             &trans
             >;
         };
@@ -145,7 +155,7 @@
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
 &trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp SEMI  &trans
 &trans           &trans         &trans            &trans     &trans            &mo 4  &mo 1  &trans  &trans          &trans            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
@@ -154,7 +164,7 @@
             bindings = <
      &kp F1        &kp C_BRI_DN    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE   &to 4   &mo 5  &kp F7   &kp F8     &kp F9          &kp F10        &kp F11       &kp F12
 &trans           &kp LC(Q)           &kp LC(W)          &kp UP        &kp GRAVE   &kp LC(T)   &to 0   &to 6  &trans  &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT      &to 3  &trans  &trans                               &trans         &trans         &to 2        &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL         &kp LEFT_ALT    &kp LEFT_GUI     &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT   &trans    &to 3   &trans                               &trans         &trans      &trans   &to 2        &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL         &kp LEFT_ALT    &kp LEFT_GUI     &trans
      &trans           &kp PAGE_UP           &kp PAGE_DOWN          &kp HOME        &kp END   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
       &to 0        &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans   &trans     &trans  &kp PRINTSCREEN  &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV       &to 0
             >;
