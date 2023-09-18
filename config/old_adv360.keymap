@@ -144,11 +144,11 @@
 
         HandsDownSwe {
             bindings = <
-        &tog 1           &kp N1           &kp N2             &kp N3               &kp N4    &kp N5         &to 4       &mo 5     &kp N6        &kp N7            &kp N8             &kp N9            &kp N0  &kp MINUS
-       &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp RA(W)  &kp RA(O)  &kp RA(A)              &kp J             &kp Q      &kp Z
+        &to 8           &kp N1           &kp N2             &kp N3               &kp N4    &kp N5         &to 4       &mo 5     &kp N6        &kp N7            &kp N8             &kp N9            &kp N0  &kp MINUS
+       &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp SLASH  &kp SEMI  &kp SINGLE_QUOTE              &kp J             &kp Q      &kp Z
  &kp ESCAPE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_at
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 4 0  &leader_mac       &mo 5   &kp RALT  &lt 3 ENTER         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
+    &to 7     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 4 0  &leader_mac       &mo 5   &kp RALT  &lt 3 ENTER         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
@@ -214,10 +214,19 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &num_word  &trans  &trans  &trans /**/ &trans  &trans  U_WH_D        U_MS_U         U_WH_U    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  U_WH_D        U_MS_U         U_WH_U    &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  U_MS_L   U_MS_D   U_MS_R  &trans  &trans
-&trans  &trans  &trans  &num_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  U_BTN2        U_BTN1    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+        Swedish {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp RA(W)  &kp RA(O)  &kp RA(A)   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
