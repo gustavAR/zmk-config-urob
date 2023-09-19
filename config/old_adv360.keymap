@@ -104,12 +104,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        iml: instant_macro_layer {
-            compatible = "zmk,behavior-macro";
-            label = "INSTANTMACROLAYER";
-            #binding-cells = <1>;
-            bindings = < &sl >;
-        };
         leader_mac: behavior_macro_1 {
             compatible = "zmk,behavior-macro";
             label = "MACRO1";
@@ -134,6 +128,12 @@
             #binding-cells = <0>;
             bindings = < &sl 4 >;
         };
+        lead2_mac: behavior_macro_5 {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO5";
+            #binding-cells = <0>;
+            bindings = < &sl 9 >;
+        };
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY_QUICK_RELEASE";
@@ -143,7 +143,7 @@
             quick-release;
             ignore-modifiers;
         };
-        ioh: iml_or_hold {
+        loh: lead_or_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP_LAYER_REPEAT";
             #binding-cells = <2>;
@@ -153,7 +153,19 @@
             global-quick-tap;
             bindings =
                 <&mo>,
-                <&iml>;
+                <&leader_mac>;
+        };
+        loh2: lead_or_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP_LAYER_REPEAT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <225>;
+            quick-tap-ms = <200>;
+            global-quick-tap;
+            bindings =
+                <&mo>,
+                <&lead2_mac>;
         };
     };
 
@@ -166,7 +178,7 @@
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp SLASH  &kp SEMI  &kp SINGLE_QUOTE              &kp J             &kp Q      &kp Z
  &kp ESCAPE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_at
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &to 7     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 4 0  &ioh 3 1       &mo 5   &kp RALT  &ioh 2 9         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
+    &to 7     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 3 0  &loh 4 0       &mo 5   &kp RALT  &loh2 2 0         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
