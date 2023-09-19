@@ -143,6 +143,31 @@
             quick-release;
             ignore-modifiers;
         };
+        macs: sticky_key_quick_macro_shift {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO6";
+            #binding-cells = <0>;
+            bindings = < &skq LEFT_SHIFT>;
+        };
+        macc: sticky_key_quick_macro_control {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO7";
+            #binding-cells = <0>;
+            bindings = < &skq LEFT_CONTROL>;
+        };
+        maca: sticky_key_quick_macro_alt {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO8";
+            #binding-cells = <0>;
+            bindings = < &skq LEFT_ALT>;
+        };
+        macg: sticky_key_quick_macro_gui {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO9";
+            #binding-cells = <0>;
+            bindings = < &skq LEFT_GUI>;
+        };
+
     };
 
     keymap {
@@ -162,8 +187,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &num_word  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans  &trans  &trans  &num_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
+&trans  &macg  &maca  &macs  &macc  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &macc  &macs  &maca  &macg   &trans
+&trans  &trans  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &mo 2  &mo 2  &mo 2  &trans  &trans  &trans  &trans
             >;
         };
@@ -238,9 +263,9 @@
         Leader2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &num_word  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
-&trans  &trans  &trans  &num_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &mo 3  &mo 4  &trans  &trans /**/ &trans  &trans  &mo 2  &trans  &trans  &trans  &trans  &trans
             >;
         };
