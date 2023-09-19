@@ -143,30 +143,6 @@
             quick-release;
             ignore-modifiers;
         };
-        loh: lead_or_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_LEAD";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <200>;
-            global-quick-tap;
-            bindings =
-                <&mo>,
-                <&leader_mac>;
-        };
-        loh2: lead2_or_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_LEAD2";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <200>;
-            global-quick-tap;
-            bindings =
-                <&mo>,
-                <&lead2_mac>;
-        };
     };
 
     keymap {
@@ -178,7 +154,7 @@
        &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to 0       &to 6  &kp SLASH  &kp SEMI  &kp SINGLE_QUOTE              &kp J             &kp Q      &kp Z
  &kp ESCAPE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T     &kp G         &to 3  &mo 4  &kp RALT   &kp RALT  &mo 2   &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_at
 &kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo 4         &none             &none          &kp PG_UP             &none      &none  &under_minus                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &to 7     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 3 0  &loh 4 0       &mo 5   &kp RALT  &loh2 2 0         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
+    &to 7     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr 3 0  &leader_mac       &mo 5   &kp RALT  &lead2_mac         &gql 2 SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
@@ -188,7 +164,7 @@
 &trans  &trans  &trans  &num_word  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
 &trans  &trans  &trans  &num_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &mo 2  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &mo 2  &mo 2  &mo 2  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -265,7 +241,7 @@
 &trans  &trans  &trans  &num_word  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
 &trans  &trans  &trans  &num_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 2  &trans  &trans /**/ &trans  &trans  &mo 2  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 3  &mo 4  &trans  &trans /**/ &trans  &trans  &mo 2  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
