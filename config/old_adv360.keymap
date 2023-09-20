@@ -21,19 +21,6 @@
 
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <20>;
-            key-positions = <31 32>;
-            bindings = <&kp ESC>;
-        };
-        combo_enter {
-            timeout-ms = <20>;
-            key-positions = <37 38>;
-            bindings = <&kp ENTER>;
-        };
-    };
     behaviors {
 
         gqt: global-quick-tap {
