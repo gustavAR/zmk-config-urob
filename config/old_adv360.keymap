@@ -177,9 +177,9 @@
             quick-release;
             ignore-modifiers;
         };
-        gnum: behavior_macro_6 {
+        gnum: behavior_macro_9 {
             compatible = "zmk,behavior-macro";
-            label = "MACRO6";
+            label = "MACRO9";
             #binding-cells = <0>;
             bindings = < &skq LEFT_SHIFT >, < &sl NUM >;
         };
