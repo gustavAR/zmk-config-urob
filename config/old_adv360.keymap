@@ -16,7 +16,18 @@
 #define MOU 7
 #define QWE 8
 #define MOD 9
+#define WIN 10
 
+
+
+ZMK_BEHAVIOR(tabswap, tri_state,
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <LM2>;
+)
+ZMK_BEHAVIOR(gswap, tri_state,
+    bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
+    ignored-key-positions = <LB2>;
+)
 
 
 
@@ -183,6 +194,12 @@
             #binding-cells = <0>;
             bindings = < &skq LEFT_SHIFT >, < &sl NUM >;
         };
+        navexit: behavior_macro_10 {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO10";
+            #binding-cells = <0>;
+            bindings = < &kp ENTER  &tog WIN >;
+        };
 
     };
 
@@ -213,7 +230,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans  &trans  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
+&trans  &tog WIN  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &tog LE2  &tog SYM  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -283,6 +300,15 @@
 &none         &none         &none         &none         &none            &none  &none   &bt BT_CLR    &bt BT_CLR                                   &bt BT_CLR    &bt BT_CLR  &none  &none  &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none            &none                   &none        &none         &none         &none            &none         &none         &none                   &none  &none  &none  &none  &none  &none  &none
 &none         &none         &none    &bl BL_INC    &bl BL_DEC  &none              &bl BL_TOG        &none         &none    &bl BL_TOG  &none    &bl BL_INC    &bl BL_DEC                   &none  &none  &none
+            >;
+        };
+        WindowNav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(F4)  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp LG(N7)  &kp LG(N8)   &kp LG(N9)   &trans  &trans  &trans
+&trans  &trans  &navexit  &kp LS(TAB)  &tabswap  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LS(GRAVE)  &gswap  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &tog WIN  &trans /**/ &trans  &kp LG(N0)  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
