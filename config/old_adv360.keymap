@@ -233,7 +233,7 @@
 &trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
 &trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp SEMI  &trans
-&trans           &trans         &trans            &trans     &trans            &trans  &tog SYM  &trans  &trans          &sym2_mac            &trans             &trans       &trans  &trans  &trans             &trans
+&trans           &trans         &trans            &trans     &trans            &trans  &tog SYM  &trans  &trans          &lead2_mac            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
 
@@ -243,7 +243,7 @@
 &trans           &kp LC(Q)           &kp LC(W)          &kp LC(E)        &kp LC(R)   &kp LC(T)   &to BAS  &to QWE  &trans  &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
 &trans  &mt LEFT_GUI LC(A)      &mt LALT LC(S)   &mt LSHIFT LC(D)  &mt LCTRL LC(F)   &kp LC(G)   &to NAV  &trans  &trans                               &trans         &trans         &to SYM          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
      &trans           &kp LC(Z)           &kp LC(X)          &kp LC(C)        &kp LC(V)   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &trans
-      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &tog NAV  &trans  &trans   &nav2_mac     &trans  &trans  &trans   &trans     &to 0
+      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &tog NAV  &trans  &trans   &lead2_mac     &trans  &trans  &trans   &trans     &to 0
             >;
         };
 
@@ -253,7 +253,7 @@
              &kp TAB            &kp F7        &kp F8        &kp F9         &kp F10         &trans      &to BAS  &to QWE        &trans       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
 &mt LEFT_CONTROL ESC            &mt LEFT_GUI F4        &mt LEFT_ALT F5        &mt LEFT_SHIFT F6         &mt LEFT_CONTROL F11         &trans      &to NAV  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to SYM    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
       &kp LEFT_SHIFT            &kp F1        &kp F2        &kp F3         &kp F12         &trans      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none    &trans  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
-               &to BAS          &trans         &trans            &trans     &trans            &trans  &tog NUM            &trans        &trans  &num2_mac        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 3
+               &to BAS          &trans         &trans            &trans     &trans            &trans  &tog NUM            &trans        &trans  &lead2_mac        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 3
             >;
         };
 
