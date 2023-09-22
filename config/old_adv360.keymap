@@ -201,6 +201,12 @@ ZMK_BEHAVIOR(gswap, tri_state,
             #binding-cells = <0>;
             bindings = < &kp ENTER  &tog WIN >;
         };
+        dotspaceshift: behavior_macro_11 {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO11";
+            #binding-cells = <0>;
+            bindings = < &kp DOT  &kp SPACE  &sk LEFT_SHIFT >;
+        };
 
     };
 
@@ -239,7 +245,7 @@ ZMK_BEHAVIOR(gswap, tri_state,
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
+&trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &dotspaceshift  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &tog NAV  &tog NUM  &trans /**/ &trans  &tog LE2  &mo SYM  &trans  &trans  &trans  &trans  &trans
             >;
