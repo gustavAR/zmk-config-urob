@@ -21,19 +21,21 @@
 
 
 
-ZMK_BEHAVIOR(tabswap, tri_state,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <LM2>;
-)
-ZMK_BEHAVIOR(gswap, tri_state,
-    bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
-    ignored-key-positions = <LB2>;
-)
-
-
 
 / {
     behaviors {
+        tabswap: tabs {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <LM2>;
+        };
+        gswap: tabg {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>
+            bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
+            ignored-key-positions = <LB2>;
+        };
 
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
