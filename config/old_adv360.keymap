@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "mouse.dtsi"
 #include "../zmk-nodefree-config/helper.h"
-#include <keypos_adv360.h>
+#include "keypos_adv360.h"
 
 #define BAS 0
 #define SWE 1
