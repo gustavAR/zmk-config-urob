@@ -153,19 +153,19 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO6";
             #binding-cells = <0>;
-            bindings = < &tog SYM >, < &lead2_mac>;
+            bindings = < &tog SYM >, < &sl LE2>;
         };
         nav2_mac: behavior_macro_7 {
             compatible = "zmk,behavior-macro";
             label = "MACRO7";
             #binding-cells = <0>;
-            bindings = < &tog NAV >, < &lead2_mac>;
+            bindings = < &tog NAV >, < &sl LE2>;
         };
         num2_mac: behavior_macro_8 {
             compatible = "zmk,behavior-macro";
             label = "MACRO8";
             #binding-cells = <0>;
-            bindings = < &tog NUM >, < &lead2_mac>;
+            bindings = < &tog NUM >, < &sl LE2>;
         };
 
         skq: sticky_key_quick_release {
