@@ -11,14 +11,14 @@
 #define BAS 0
 #define SWE 1
 #define LE1 2
-#define SYM 3
-#define NAV 4
-#define NUM 5
-#define MOU 6
-#define QWE 7
-#define MOD 8
-#define WIN 9
-#define LE2 10
+#define LE2 3
+#define SYM 4
+#define NAV 5
+#define NUM 6
+#define MOU 7
+#define QWE 8
+#define MOD 9
+#define WIN 10
 
 
 
@@ -256,6 +256,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &tog LE2  &tog SYM  &trans  &trans  &trans  &trans  &trans
             >;
         };
+        Leader2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &dotspaceshift  &trans  &trans  &trans /**/ &trans  &trans  &trans  &dotspaceshift  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
+&trans  &trans  &trans  &trans  &kp BACKSPACE  &dotsq  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &tog NAV  &tog NUM  &trans /**/ &trans  &tog LE2  &mo SYM  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         Symbols {
             bindings = <
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
@@ -323,15 +333,5 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &tog WIN  &trans /**/ &trans  &kp LG(N0)  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-        Leader2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &dotspaceshift  &trans  &trans  &trans /**/ &trans  &trans  &trans  &dotspaceshift  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
-&trans  &trans  &trans  &trans  &kp BACKSPACE  &dotsq  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &tog NAV  &tog NUM  &trans /**/ &trans  &tog LE2  &mo SYM  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
     };
 };
