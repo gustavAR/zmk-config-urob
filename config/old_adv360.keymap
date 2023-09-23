@@ -210,7 +210,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO11";
             tap-ms = <0>;
-            wait = <0>;
+            wait-ms = <0>;
             #binding-cells = <0>;
             bindings = < &kp DOT  &kp SPACE  &sk LEFT_SHIFT >;
         };
