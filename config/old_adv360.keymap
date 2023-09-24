@@ -258,8 +258,8 @@
         Leader {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &caps_word  &trans  &trans  &trans
-&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
+&trans  &trans  &tog NUM  &tog SYM  &tog NAV  &trans  &trans /**/ &trans  &trans  &trans  &caps_word  &trans  &trans  &trans
+&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
 &trans  &tog WIN  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &tog LE2  &tog SYM  &trans  &trans  &trans  &trans  &trans
             >;
