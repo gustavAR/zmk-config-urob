@@ -250,7 +250,7 @@
         Leader {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &caps_word  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
 &trans  &tog WIN  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &tog LE2  &tog SYM  &trans  &trans  &trans  &trans  &trans
@@ -327,7 +327,7 @@
         WindowNav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LA(F4)  &trans /**/ &trans  &trans  &kp LG(N7)  &kp LG(N8)   &kp LG(N9)  &trans  &trans
+&trans  &trans  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LA(F4)  &trans /**/ &trans  &trans  &kp LG(N7)  &kp LG(N8)   &kp LG(N9)  &kp LG(C)  &trans
 &trans  &kp LEFT_SHIFT  &navexit  &kp LS(TAB)  &tabswap  &kp LC(Q)  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LC(TAB)  &trans
 &trans  &kp LG(K)  &kp LG(J)  &kp TILDE  &gswap  &kp LC(W)  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LS(LC(TAB))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &tog WIN  &trans /**/ &trans  &kp LG(N0)  &trans  &trans  &trans  &trans  &trans  &trans
