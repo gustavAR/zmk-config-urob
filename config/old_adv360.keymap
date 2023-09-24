@@ -261,7 +261,7 @@
 &trans  &trans  &tog NUM  &tog SYM  &tog NAV  &trans  &trans /**/ &trans  &trans  &trans  &caps_word  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
 &trans  &tog WIN  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &tog LE2  &tog SYM  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
         Leader2 {
@@ -270,7 +270,7 @@
 &trans  &trans  &kp Z  &kp UNDERSCORE  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &dotspaceshift  &trans  &trans  &trans /**/ &trans  &trans  &trans  &dotspaceshift  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
 &trans  &trans  &trans  &kp BACKSPACE  &kp LC(BACKSPACE)  &dotsq  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &dotsq  &kp LC(BACKSPACE)  &kp BACKSPACE  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &tog NAV  &tog NUM  &trans /**/ &trans  &tog LE2  &mo SYM  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
