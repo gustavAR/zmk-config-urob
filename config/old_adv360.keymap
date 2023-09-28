@@ -293,7 +293,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Z  &kp UNDERSCORE  &kp Q  &parentmac  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp TAB  &kp ESCAPE  &kp ENTER  &dotspaceshift  &trans  &trans  &trans /**/ &trans  &trans  &trans  &dotspaceshift  &kp ENTER  &kp ESCAPE  &kp TAB  &trans  &trans
-&trans  &trans  &trans  &kp BACKSPACE  &kp LC(BACKSPACE)  &dotsq  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &dotsq  &kp LC(BACKSPACE)  &kp BACKSPACE  &trans  &trans  &trans
+&trans  &trans  &kp W  &kp BACKSPACE  &kp LC(BACKSPACE)  &dotsq  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &dotsq  &kp LC(BACKSPACE)  &kp BACKSPACE  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
