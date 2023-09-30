@@ -263,10 +263,10 @@
         HandsDownSwe {
             bindings = <
         &tog SWE           &kp N1           &kp N2             &kp N3               &kp N4    &kp N5         &to NUM       &mo MOD     &kp N6        &kp N7            &kp N8             &kp N9            &kp N0  &kp MINUS
-       &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to BAS  &to QWE  &kp SLASH  &kp SEMI  &kp SINGLE_QUOTE              &kp J             &kp Q      &kp Z
+       &kp TAB            &kp W            &kp F              &kp M                &kp P     &kp V         &to BAS  &to QWE  &kp Z  &kp X  &kp Q      &kp J             &kp Q      &kp Z
  &kp ESCAPE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T     &kp G         &to NAV  &mo NUM  &kp RALT   &kp RALT  &mo SYM   &to SYM     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_at
-&kp LEFT_SHIFT      &gqt RALT X            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo NUM         &none             &none          &kp PG_UP             &none      &none  &kp COMMA                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
-    &to MOU     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr NAV 0  &leader_mac       &mo MOD   &kp RALT  &lead2_mac         &gql SYM SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
+&kp LEFT_SHIFT      &gqt RALT W            &kp C              &kp L                &kp D     &kp B         &none       &none      &mo NUM         &none             &none          &kp PG_UP             &none      &none  &kp COMMA                &kp U              &kp O            &kp Y      &gqt RALT K  &kp RIGHT_SHIFT
+    &to MOU     &kp LEFT_GUI       &caps_word            &kp LA(TAB)          &kp TAB  &gqr NAV 0  &leader_mac       &mo MOD   &kp RALT  &sl NAV         &gql SYM SPACE  &kp LC(BACKSPACE)     &kp BACKSPACE  &kp LA(TAB)  &kp LEFT_GUI           &kp DELETE
             >;
         };
         Swedish {
@@ -282,7 +282,7 @@
         Leader {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &tog NUM  &tog SYM  &tog NAV  &trans  &trans /**/ &trans  &trans  &trans  &leadcaps  &trans  &trans  &trans
+&trans  &trans  &tog NUM  &tog SYM  &tog NAV  &trans  &tog SWE /**/ &trans  &trans  &trans  &caps_word  &trans  &trans  &trans
 &trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
 &trans  &tog WIN  &num_mac  &nav_mac  &sym_mac  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -311,19 +311,19 @@
         Nav {
             bindings = <
        &kp C_BRI_UP     &kp C_BRI_DN    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE   &to NUM   &mo MOD  &kp F7   &kp F8     &kp F9          &kp F10        &kp F11       &kp F12
-&trans    &kp LC(Q)           &kp LC(W)          &kp LC(E)        &kp LC(R)   &kp LC(T)   &to BAS  &to QWE  &trans  &kp TAB  &kp ENTER        &kp TAB  &trans        &trans
-&trans  &mt LEFT_GUI LC(A)      &mt LALT LC(S)   &mt LSHIFT LC(D)  &mt LCTRL LC(F)   &kp LC(G)   &to NAV  &trans  &trans                               &trans         &trans         &to SYM          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
-     &trans           &kp LC(Z)           &kp LC(X)          &kp LC(C)        &kp LC(V)   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &trans
-      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &tog NAV  &trans  &trans   &nav2_mac     &trans  &trans  &trans   &trans     &to 0
+&trans    &kp LC(Q)           &kp LC(W)          &kp UNDERSCORE        &kp LC(R)   &kp LC(T)   &to BAS  &to QWE  &trans  &kp TAB  &kp ENTER        &kp TAB  &trans        &trans
+&trans   &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &to NAV  &trans  &trans                               &trans         &trans         &to SYM          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
+     &trans           &kp BACKSPACE  &kp LC(BACKSPACE)  &kp ESCAPE  &kp ENTER  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &trans
+      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &trans  &trans  &trans   &trans     &trans  &trans  &trans   &trans     &to 0
             >;
         };
 
         keypad {
             bindings = <
            &kp EQUAL            &kp N1        &kp N2        &kp N3          &kp N4         &kp N5     &trans             &mo MOD        &kp N6   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp MINUS
-             &kp TAB            &kp F7        &kp F8        &kp F9         &kp F10         &trans      &to BAS  &to QWE        &trans       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
-&mt LEFT_CONTROL ESC            &mt LEFT_GUI F4        &mt LEFT_ALT F5        &mt LEFT_SHIFT F6         &mt LEFT_CONTROL F11         &trans      &to NAV  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to SYM    &trans  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
-      &kp LEFT_SHIFT            &kp F1        &kp F2        &kp F3         &kp F12         &trans      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none    &trans  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
+             &kp TAB            &kp F7        &kp F8        &kp F9         &kp F10         &trans      &to BAS  &to QWE        &kp CARET       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
+&mt LEFT_CONTROL ESC            &mt LEFT_GUI F4        &mt LEFT_ALT F5        &mt LEFT_SHIFT F6         &mt LEFT_CONTROL F11         &trans      &to NAV  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to SYM    &kp DOLLAR  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
+      &kp LEFT_SHIFT            &kp F1        &kp F2        &kp F3         &kp F12         &trans      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none    &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
                &to BAS          &trans         &trans            &trans     &trans            &trans  &tog NUM            &trans        &trans  &num2_mac        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 3
             >;
         };
