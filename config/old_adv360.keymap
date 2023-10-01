@@ -299,8 +299,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &tog NUM  &tog SYM  &tog NAV  &swe  &trans /**/ &trans  &swe  &tog NAV  &tog SYM  &tog NUM  &trans  &trans
-&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &lead2_mac  &trans  &trans  &trans /**/ &trans  &transL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans  &tog WIN  &cwr  &nav_mac  &sym_mac  &tog MOU  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &tog MOU    &trans
+&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &lead2_mac  &trans  &trans  &trans /**/ &trans  &trans  &trans    &trans   &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
+&trans  &tog WIN  &cwr  &nav_mac  &sym_mac  &tog MOU  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &tog MOU    &sym_mac  &nav_mac  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
