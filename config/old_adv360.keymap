@@ -254,6 +254,14 @@
             #binding-cells = <0>;
             bindings = < &tog LE2  &caps_word >;
         };
+        swe: behavior_macro_15 {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO15";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings = < &tog SWE >;
+        };
 
     };
 
