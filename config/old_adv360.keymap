@@ -260,7 +260,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = < &tog SWE >;
+            bindings = < &tog SWE  &kp K_CANCEL >;
         };
 
     };
