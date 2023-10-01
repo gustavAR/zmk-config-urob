@@ -299,8 +299,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &tog NUM  &tog SYM  &tog NAV  &swe  &trans /**/ &trans  &swe  &tog NAV  &tog SYM  &tog NUM  &trans  &trans
-&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans /**/ &trans    &trans   &trans  &trans  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
-&trans  &tog WIN  &cwr  &nav_mac  &sym_mac  &tog MOU  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &tog MOU    &sym_mac  &nav_mac  &trans  &trans  &trans
+&trans  &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &num_mac  &trans  &trans  &trans /**/ &trans    &trans   &trans  &num_mac  &skq LEFT_CONTROL  &skq LEFT_SHIFT  &skq LEFT_ALT  &skq LEFT_GUI  &trans
+&trans  &tog WIN  &cwr  &nav_mac  &sym_mac  &tog MOU  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &tog MOU    &sym_mac  &nav_mac  &cwr  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -330,7 +330,7 @@
 &trans    &kp LC(Q)           &kp LC(BACKSPACE)          &kp UNDERSCORE        &kp LC(R)   &kp LC(T)   &to BAS  &to QWE  &trans  &kp TAB  &kp ENTER        &kp TAB  &trans        &trans
 &trans   &skq LEFT_GUI  &skq LEFT_ALT  &skq LEFT_SHIFT  &skq LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
      &trans           &kp BACKSPACE  &kp TAB  &kp ESCAPE  &kp ENTER &trans  &trans   &trans     &trans           &trans         &trans        &trans   &trans  &trans        &trans  &kp HOME  &kp END  &kp PAGE_DOWN  &kp PAGE_UP  &trans
-      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &tog NAV  &trans  &trans   &trans     &trans  &trans  &trans   &trans     &to 0
+      &trans        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans  &trans  &trans  &trans   &tog NAV     &trans  &trans  &trans   &trans     &to 0
             >;
         };
 
