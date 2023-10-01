@@ -319,7 +319,7 @@
 &trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
 &trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &kp HASH  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
 &trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
-&trans        &kp CARET      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp SEMI  &trans
+&trans        &num_mac      &kp SLASH          &kp SINGLE_QUOTE  &kp TILDE          &kp PIPE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp SEMI  &trans
 &trans           &trans         &trans            &trans     &trans            &trans  &tog SYM  &trans  &trans          &sym2_mac            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
